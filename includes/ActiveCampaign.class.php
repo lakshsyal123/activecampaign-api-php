@@ -79,6 +79,8 @@ class ActiveCampaign extends AC_Connector {
 		$this->version = (int)$version;
 		if ($version == 2) {
 			$this->url_base = $this->url_base . "/2";
+		} else if ($version == 3) {
+			$this->url_base = $this->url_base . "/3";
 		}
 	}
 
